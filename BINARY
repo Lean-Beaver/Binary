@@ -1,0 +1,120 @@
+import java.util.Scanner;
+//Scanner being imported
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner Qeustions = new Scanner(System.in);
+    //declaring my scanner
+    try
+    {
+      //try for later closing the scanner
+      int Length=0;
+      int Number1=0;
+      int Number2=0;
+      int Number3=0;
+      int Number4=0;
+      int Number5=0;
+      int Number6=0;
+      int Number7=0;
+      int Number8=0;
+      int Number9=0;
+      int Number10=0;
+      int Number11=0;
+      int Number12=0;
+      int Number13=0;
+      int Number14=0;
+      int Number15=0;
+      int Number16=0;
+      System.out.println("How many bits will be in your Binary string? (8 or 16)");
+      Length = Qeustions.nextInt();
+      System.out.println("What binary numbers would you like to convert to a number?(put them in order from left to right with a space in between each, and DO NOT TYPE OUT THE NUMBERS NAME JUST USE THE SYMBOL)");
+      if(Length==8)
+      {
+        Number8=Qeustions.nextInt();
+        Number7=Qeustions.nextInt();
+        Number6=Qeustions.nextInt();
+        Number5=Qeustions.nextInt();
+        Number4=Qeustions.nextInt();
+        Number3=Qeustions.nextInt();
+        Number2=Qeustions.nextInt();
+        Number1=Qeustions.nextInt();
+      }
+      //this asks for 8 different numbers if the user typed 8
+      else if(Length==16)
+      {
+        Number16=Qeustions.nextInt();
+        Number15=Qeustions.nextInt();
+        Number14=Qeustions.nextInt();
+        Number13=Qeustions.nextInt();
+        Number12=Qeustions.nextInt();
+        Number11=Qeustions.nextInt();
+        Number10=Qeustions.nextInt();
+        Number9=Qeustions.nextInt();
+        Number8=Qeustions.nextInt();
+        Number7=Qeustions.nextInt();
+        Number6=Qeustions.nextInt();
+        Number5=Qeustions.nextInt();
+        Number4=Qeustions.nextInt();
+        Number3=Qeustions.nextInt();
+        Number2=Qeustions.nextInt();
+        Number1=Qeustions.nextInt();
+      }
+      //this asks for 16 different numbers if the user typed 16
+      if (Number1==1){
+        Number1=1;
+      }
+      if (Number2==1){
+        Number2=2;
+      }
+      if (Number3==1){
+        Number3=4;
+      }
+      if (Number4==1){
+        Number4=8;
+      }
+      if (Number5==1){
+        Number5=16;
+      }
+      if (Number6==1){
+        Number6=32;
+      }
+      if (Number7==1){
+        Number7=64;
+      }
+      if (Number8==1){
+        Number8=128;
+      }
+      if (Number9==1){
+        Number9=256;
+      }
+      if (Number10==1){
+        Number10=512;
+      }
+      if (Number11==1){
+        Number11=1024;
+      }
+      if (Number12==1){
+        Number12=2048;
+      }
+      if (Number13==1){
+        Number13=4096;
+      }
+      if (Number14==1){
+        Number14=8192;
+      }
+      if (Number15==1){
+        Number15=16384;
+      }
+      if (Number16==1){
+        Number16=32768;
+      }
+      //these if statements look at if the number is 1, and if it is then it changes the value a square root of 2 that corresponds with where it was placed
+      System.out.println(Number16 + Number15 + Number14 + Number13 + Number12 + Number11 + Number10 + Number9 + Number8 + Number7 + Number6 + Number5 + Number4 + Number3 + Number2 + Number1);
+    }
+    finally 
+    {
+      Qeustions.close();//this is the scanner closing
+    }
+  }
+}
